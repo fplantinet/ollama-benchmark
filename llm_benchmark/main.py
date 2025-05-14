@@ -33,7 +33,7 @@ def run(ollamabin: str = 'ollama' , sendinfo : bool = True , custombenchmark : s
 
     if custombenchmark:
         models_file_path = custombenchmark
-        sendinfo = False
+        sendinfo = True
         print(f"running custom benchmark from models_file_path: {models_file_path}")
         print(f"Disabling sendinfo for custom benchmark")
     else:
