@@ -1,4 +1,5 @@
 import platform
+import socket
 import psutil
 import GPUtil
 import subprocess
@@ -106,6 +107,7 @@ def get_extra():
     ans['cpu'] = f"unknown"
     ans['gpu'] = f"unknown"
     ans['os_version'] = f"unknown"
+    ans['hostname'] = socket.gethostname()
 
     try:
         if(system_info.system=='Darwin'):
@@ -158,7 +160,7 @@ def get_extra():
             try:
                 r1 = subprocess.run(['lshw','-C','cpu'],capture_output=True,text=True)
                 for line in r1.stdout.split('\n'):
-                    if ('product' in line):
+                    if ('produit' in line):
                         ans['cpu']=f"{line[16:]}"
             except:
                 cmd = ['lscpu']
@@ -189,7 +191,7 @@ def get_extra():
                     print('Only one GPU card')
                     #List only the first gpu name
                     ans['gpu']=get_gpu_info()['1']['name']
-                                        
+
             return ans
             
         elif(system_info.system=='Windows'):
