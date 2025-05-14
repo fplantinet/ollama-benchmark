@@ -1,8 +1,7 @@
 import requests,json
 
 
-remote_server = "http://llm.aidatatools.com"
-#emote_server = "http://localhost:5000"
+remote_server = "https://central.brutdeflo.com"
 
 def send_sysinfo(data_dict):
     
@@ -10,7 +9,7 @@ def send_sysinfo(data_dict):
     print(json_object)
     print('-'*10)
 
-    url = f'{remote_server}/api/receiver.php'
+    url = f'{remote_server}/api/system-information'
 
     x = requests.post(url, data = json_object)
 
@@ -23,7 +22,7 @@ def send_benchmark(uuid, ollama_version,data_dict):
     print(json_object)
     print('-'*10)
 
-    url = f'{remote_server}/api/receiver_benchmark.php'
+    url = f'{remote_server}/api/benchmark'
 
     x = requests.post(url, data = json_object)
 
