@@ -1,0 +1,4 @@
+file_name: "others.yml"
+version: 2.0.custom
+models:
+    - model: "qwq:32b"

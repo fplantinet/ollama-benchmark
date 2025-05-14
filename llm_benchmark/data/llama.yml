@@ -1,0 +1,8 @@
+file_name: "gemma3.yml"
+version: 2.0.custom
+models:
+    - model: "llama3.3:70b"
+    - model: "llama3.2:1b"
+    - model: "llama3.2:3b"
+    - model: "llama3.1:8b"
+    - model: "llama3.1:70b"

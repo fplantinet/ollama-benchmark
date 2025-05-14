@@ -1,0 +1,8 @@
+file_name: "phi.yml"
+version: 2.0.custom
+models:
+    - model: "phi4:14b"
+    - model: "phi4-mini:3.8b"
+    - model: "phi3:3.8b"
+    - model: "phi3:14b"
+    - model: "phi3.5:3.8b"

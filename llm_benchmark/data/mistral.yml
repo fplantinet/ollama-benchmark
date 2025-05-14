@@ -1,0 +1,7 @@
+file_name: "mistral.yml"
+version: 2.0.custom
+models:
+    - model: "mistral:7b"
+    - model: "mistral-small3.1:24b"
+    - model: "mixtral:8x7b"
+    - model: "mixtral:8x22b"

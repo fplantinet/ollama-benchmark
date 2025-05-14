@@ -1,0 +1,7 @@
+file_name: "gemma3.yml"
+version: 2.0.custom
+models:
+    - model: "gemma3:1b"
+    - model: "gemma3:4b"
+    - model: "gemma3:12b"
+    - model: "gemma3:27b"

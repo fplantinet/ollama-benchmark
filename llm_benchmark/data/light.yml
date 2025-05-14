@@ -1,0 +1,5 @@
+file_name: "code.yml"
+version: 2.0.custom
+models:
+    - model: "deepcoder:14b"
+    - model: "mistral:7b"
